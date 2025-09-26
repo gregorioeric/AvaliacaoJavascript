@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo de Média do Aluno</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Cálculo de Média</h1>
+
+      <form id="form-media" novalidate>
+        <div class="grupo">
+          <label for="nome">Nome do aluno</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Ex.: Ana Silva"
+            required
+          />
+          <small class="ajuda">Obrigatório</small>
+        </div>
+
+        <div class="grid-notas">
+          <div class="grupo">
+            <label for="nota01">Nota 1</label>
+            <input
+              type="text"
+              inputmode="decimal"
+              id="nota01"
+              name="nota01"
+              placeholder="0 a 10"
+              required
+            />
+          </div>
+
+          <div class="grupo">
+            <label for="nota02">Nota 2</label>
+            <input
+              type="text"
+              inputmode="decimal"
+              id="nota02"
+              name="nota02"
+              placeholder="0 a 10"
+              required
+            />
+          </div>
+
+          <div class="grupo">
+            <label for="nota03">Nota 3</label>
+            <input
+              type="text"
+              inputmode="decimal"
+              id="nota03"
+              name="nota03"
+              placeholder="0 a 10"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit" id="btn-enviar">Enviar</button>
+        <button type="reset" class="secundario" id="btn-limpar">Limpar</button>
+      </form>
+
+      <div id="resultado" class="resultado"></div>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
