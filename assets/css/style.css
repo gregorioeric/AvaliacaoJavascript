@@ -35,7 +35,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 90%;
   background: color-mix(in srgb, var(--card) 85%, black 15%);
   border: 1px solid #1f2937;
   border-radius: 16px;
@@ -59,6 +59,12 @@ form {
 .grid-notas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.grid-inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
@@ -134,13 +140,14 @@ button.secundario {
   border: 1px solid #1f2937;
   min-height: 60px;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-content: center;
   gap: 6px;
 }
 
 .status {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .aprovado {
@@ -162,6 +169,12 @@ button.secundario {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.4;
+}
+
+.show {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 0.4rem;
 }
 
 @media (max-width: 640px) {
